@@ -14,9 +14,7 @@ Given an image, the phantom inside said image is segmented through a mask, and t
 
 ## SNR and Spatial Resolution
 
-The signal-to-noise ration (SNR) of the image is calculated by generating an ideal image capture through the product of a mask with the shape of the phantom and the average intensity, which will work as the signal with no noise. The equation to calculate the SNR of an image can be seen below.
-
-![equation](http://www.sciweavers.org/tex2img.php?eq=SNR_%7BdB%7D%20%3D%2010%20log_%7B10%7D%28%5Cfrac%7B%20%5Csum_%7Bx%3D0%7D%5E%7BM-1%7D%20%20%5Csum_%7By%3D0%7D%5E%7BN-1%7D%20%5Coverline%7Bf%7D%28x%2Cy%29%5E%7B2%7D%7D%7B%5Csum_%7Bx%3D0%7D%5E%7BM-1%7D%20%20%5Csum_%7By%3D0%7D%5E%7BN-1%7D%20%28f%28x%2Cy%29%5E2%20-%20%5Coverline%7Bf%7D%28x%2Cy%29%5E%7B2%7D%29%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+The signal-to-noise ration (SNR) of the image is calculated by generating an ideal image capture through the product of a mask with the shape of the phantom and the average intensity, which will work as the signal with no noise. The equation to calculate the SNR of an image can be seen [here.](https://www.researchgate.net/post/How_is_SNR_calculated_in_images)
 
 To analyze the spatial resolution of the system, the linear spread function (LSF) and edge spread function (ESF) curves of the tomography scanner are obtained, as well as the full width at half maximum (FWHM) of the LSF curve to obtain the spatial resolution of the system. This is done through the reconstruction one angle from the image through retro-projection, removing noise in the change of intensities and defining a line in which intensity changes from a maximum to a minimum. After this, the  ESF curve is obtained as a linear vector of the intensities of the defined line and the LSF curve as the difference of said intensities, both normalized. Afterwards, the FWHM of the LSF curve is obtained by finding the limits at the 0.5 mark and obtaining the difference. The FWHM of the LSF curve will give the number of pixels required for the LSF curve to drop half of the maximum value, which indicates the number of pixmber of pixels required to identify an intensity change.
 
