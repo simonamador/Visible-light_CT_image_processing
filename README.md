@@ -1,6 +1,6 @@
 # Visible Light Computer Tomography Image Processing Project
 
-*This project was conducted for a Image Processing course final project.*
+*This project was conducted for an Image Processing course final project.*
 
 Evaluation of a visible-light tomography scanner through an estimation of the signal-to-noise ration (SNR) and spatial resolution. It also conducts a linear regression to predict the Hounsfield Unit of a given tissue based on the image intensity. Finally, it contains an algorithm which detects the tissue shown on the image based on it's intensity, and segments foreign bodies found on the image.
 
